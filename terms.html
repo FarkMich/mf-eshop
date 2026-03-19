@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms & Conditions - Michal Farkaš</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --indigo: #6366F1; --indigo-dark: #4338CA; --indigo-light: #EEF2FF;
+      --dark: #0D1117; --navy: #1E293B; --slate: #334155;
+      --gray: #64748B; --light-gray: #94A3B8; --white: #FFFFFF;
+      --emerald: #10B981;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--dark); color: var(--white);
+      line-height: 1.6; overflow-x: hidden;
+    }
+    body::before {
+      content: ''; position: fixed; inset: 0;
+      background-image: linear-gradient(var(--navy) 1px, transparent 1px), linear-gradient(90deg, var(--navy) 1px, transparent 1px);
+      background-size: 120px 120px; opacity: 0.4; pointer-events: none; z-index: 0;
+    }
+    body::after {
+      content: ''; position: fixed; left: 0; top: 0;
+      width: 5px; height: 100%; background: var(--indigo); z-index: 100;
+    }
+    section, header, footer, main { position: relative; z-index: 1; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 4rem; border-bottom: 1px solid var(--navy);
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(13,17,23,0.85); backdrop-filter: blur(10px);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-monogram {
+      width: 40px; height: 40px; background: var(--indigo); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 900; color: var(--dark); flex-shrink: 0;
+    }
+    .nav-name { font-size: 14px; font-weight: 700; color: var(--white); }
+    .nav-cta {
+      background: var(--indigo); color: var(--white); padding: 0.6rem 1.5rem;
+      border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--indigo-dark); }
+    .page-hero { padding: 5rem 4rem 3rem; max-width: 800px; margin: 0 auto; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--indigo); margin-bottom: 1rem; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.15; margin-bottom: 1rem; }
+    .page-hero h1 span { color: var(--indigo); }
+    .page-hero p { font-size: 15px; color: var(--light-gray); max-width: 560px; }
+    .content { max-width: 800px; margin: 0 auto; padding: 0 4rem 5rem; }
+    h2.content-h { font-size: 1.2rem; font-weight: 700; color: var(--white); margin: 2.5rem 0 0.75rem; }
+    p.content-p { font-size: 14px; color: var(--gray); line-height: 1.8; margin-bottom: 0.75rem; }
+    ul.content-ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    ul.content-ul li { font-size: 14px; color: var(--gray); line-height: 1.8; margin-bottom: 0.25rem; }
+    .divider { height: 1px; background: var(--navy); margin: 2rem 0; }
+    footer {
+      padding: 2.5rem 4rem; border-top: 1px solid var(--navy);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; font-size: 12px; color: var(--gray);
+    }
+    footer a { color: var(--gray); text-decoration: none; }
+    footer a:hover { color: var(--indigo); }
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .page-hero, .content { padding-left: 1.5rem; padding-right: 1.5rem; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">
+      <div class="nav-monogram">MF</div>
+      <span class="nav-name">Michal Farkaš</span>
+    </a>
+    <a href="/" class="nav-cta">← Back to Shop</a>
+  </nav>
+
+  <header class="page-hero">
+    <div class="section-label">LEGAL</div>
+    <h1>Terms &amp;<br/><span>Conditions</span></h1>
+    <p>Last updated: March 2026. Please read these terms carefully before purchasing.</p>
+  </header>
+
+  <main class="content">
+
+    <h2 class="content-h">1. Service Provider</h2>
+    <p class="content-p">These terms govern the purchase of consulting and e-commerce building services provided by Michal Farkaš, operating as a freelance professional based in Bratislava, Slovakia. Contact: <a href="mailto:hello@michalfarkas.com" style="color:#6366F1;">hello@michalfarkas.com</a></p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">2. Services</h2>
+    <p class="content-p">The services offered include:</p>
+    <ul class="content-ul">
+      <li><strong style="color:#fff;">Starter (€297)</strong> - 90-minute strategy session and e-shop roadmap delivered via video call and written summary.</li>
+      <li><strong style="color:#fff;">Build (€997)</strong> - Full e-shop built and deployed, including design, development, payment integration, and 2 weeks of post-launch support.</li>
+      <li><strong style="color:#fff;">Growth (€1,497)</strong> - Everything in Build, plus 30 days of marketing setup including Meta Ads, email flows, and analytics.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">3. Payment</h2>
+    <p class="content-p">Payment is processed securely via Stripe. Full payment is required upfront to confirm your booking. All prices are in EUR and include VAT where applicable.</p>
+    <p class="content-p">By completing your purchase, you confirm that you are authorized to use the payment method provided.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">4. Delivery</h2>
+    <p class="content-p">Upon successful payment you will receive a confirmation email within 24 hours with next steps and a scheduling link for your kickoff call.</p>
+    <ul class="content-ul">
+      <li>Starter: session scheduled within 5 business days</li>
+      <li>Build: project delivered within 10–14 business days</li>
+      <li>Growth: full delivery within 30 calendar days</li>
+    </ul>
+    <p class="content-p">Delivery timelines depend on timely feedback and content provided by the client. Delays caused by late client responses may extend delivery dates accordingly.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">5. Client Responsibilities</h2>
+    <p class="content-p">The client agrees to:</p>
+    <ul class="content-ul">
+      <li>Provide necessary content, assets, and feedback in a timely manner</li>
+      <li>Ensure they have the legal right to use any content, images, or trademarks provided</li>
+      <li>Maintain ownership and responsibility for their domain, hosting, and third-party accounts</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">6. Intellectual Property</h2>
+    <p class="content-p">Upon full payment, all deliverables (code, design, copy) created specifically for the client become the client's property. Michal Farkaš retains the right to showcase completed projects in a portfolio unless otherwise agreed in writing.</p>
+    <p class="content-p">Third-party tools, templates, or libraries used during the build remain subject to their own respective licenses.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">7. Limitation of Liability</h2>
+    <p class="content-p">Michal Farkaš is not liable for any indirect, incidental, or consequential damages arising from the use of the delivered services. The maximum liability is limited to the amount paid for the specific service package.</p>
+    <p class="content-p">No guarantee of specific business results (revenue, traffic, conversions) is made. Marketing and e-commerce outcomes depend on many factors outside of our control.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">8. Governing Law</h2>
+    <p class="content-p">These terms are governed by the laws of the Slovak Republic. Any disputes shall be resolved under Slovak jurisdiction.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">9. Contact</h2>
+    <p class="content-p">For any questions regarding these terms, contact: <a href="mailto:hello@michalfarkas.com" style="color:#6366F1;">hello@michalfarkas.com</a></p>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Michal Farkaš · <a href="https://michalfarkas.com">michalfarkas.com</a></span>
+    <span>
+      <a href="/about">About</a> &nbsp;·&nbsp;
+      <a href="/terms">Terms</a> &nbsp;·&nbsp;
+      <a href="/returns">Returns</a>
+    </span>
+    <span><a href="mailto:hello@michalfarkas.com">hello@michalfarkas.com</a></span>
+  </footer>
+
+</body>
+</html>

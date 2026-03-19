@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Return Policy - Michal Farkaš</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --indigo: #6366F1; --indigo-dark: #4338CA; --indigo-light: #EEF2FF;
+      --dark: #0D1117; --navy: #1E293B; --slate: #334155;
+      --gray: #64748B; --light-gray: #94A3B8; --white: #FFFFFF;
+      --emerald: #10B981;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--dark); color: var(--white);
+      line-height: 1.6; overflow-x: hidden;
+    }
+    body::before {
+      content: ''; position: fixed; inset: 0;
+      background-image: linear-gradient(var(--navy) 1px, transparent 1px), linear-gradient(90deg, var(--navy) 1px, transparent 1px);
+      background-size: 120px 120px; opacity: 0.4; pointer-events: none; z-index: 0;
+    }
+    body::after {
+      content: ''; position: fixed; left: 0; top: 0;
+      width: 5px; height: 100%; background: var(--indigo); z-index: 100;
+    }
+    section, header, footer, main { position: relative; z-index: 1; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 4rem; border-bottom: 1px solid var(--navy);
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(13,17,23,0.85); backdrop-filter: blur(10px);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-monogram {
+      width: 40px; height: 40px; background: var(--indigo); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 900; color: var(--dark); flex-shrink: 0;
+    }
+    .nav-name { font-size: 14px; font-weight: 700; color: var(--white); }
+    .nav-cta {
+      background: var(--indigo); color: var(--white); padding: 0.6rem 1.5rem;
+      border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--indigo-dark); }
+    .page-hero { padding: 5rem 4rem 3rem; max-width: 800px; margin: 0 auto; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; color: var(--indigo); margin-bottom: 1rem; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.15; margin-bottom: 1rem; }
+    .page-hero h1 span { color: var(--indigo); }
+    .page-hero p { font-size: 15px; color: var(--light-gray); max-width: 560px; }
+    .content { max-width: 800px; margin: 0 auto; padding: 0 4rem 5rem; }
+    h2.content-h { font-size: 1.2rem; font-weight: 700; color: var(--white); margin: 2.5rem 0 0.75rem; }
+    p.content-p { font-size: 14px; color: var(--gray); line-height: 1.8; margin-bottom: 0.75rem; }
+    ul.content-ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    ul.content-ul li { font-size: 14px; color: var(--gray); line-height: 1.8; margin-bottom: 0.25rem; }
+    .divider { height: 1px; background: var(--navy); margin: 2rem 0; }
+    footer {
+      padding: 2.5rem 4rem; border-top: 1px solid var(--navy);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; font-size: 12px; color: var(--gray);
+    }
+    footer a { color: var(--gray); text-decoration: none; }
+    footer a:hover { color: var(--indigo); }
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .page-hero, .content { padding-left: 1.5rem; padding-right: 1.5rem; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">
+      <div class="nav-monogram">MF</div>
+      <span class="nav-name">Michal Farkaš</span>
+    </a>
+    <a href="/" class="nav-cta">← Back to Shop</a>
+  </nav>
+
+  <header class="page-hero">
+    <div class="section-label">LEGAL</div>
+    <h1>Return &amp;<br/><span>Refund Policy</span></h1>
+    <p>Last updated: March 2026. Your satisfaction matters - here's how we handle refund requests.</p>
+  </header>
+
+  <main class="content">
+
+    <h2 class="content-h">Overview</h2>
+    <p class="content-p">Because our services are digital and consulting-based, refund eligibility depends on the stage of delivery. We are committed to fair and transparent handling of all refund requests.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">Starter Package - €297</h2>
+    <p class="content-p"><strong style="color:#fff;">Before the session:</strong> Full refund if cancelled more than 48 hours before the scheduled call.</p>
+    <p class="content-p"><strong style="color:#fff;">Within 48 hours of the session:</strong> 50% refund if cancelled less than 48 hours before the call.</p>
+    <p class="content-p"><strong style="color:#fff;">After the session:</strong> No refund once the strategy session has been delivered.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">Build Package - €997</h2>
+    <p class="content-p"><strong style="color:#fff;">Before kickoff call:</strong> Full refund if requested within 48 hours of purchase and before the kickoff call takes place.</p>
+    <p class="content-p"><strong style="color:#fff;">After kickoff, before delivery:</strong> 50% refund if the project has not yet been delivered.</p>
+    <p class="content-p"><strong style="color:#fff;">After delivery:</strong> No refund once the completed e-shop has been handed over. We offer 2 weeks of post-launch support to resolve any issues.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">Growth Package - €1,497</h2>
+    <p class="content-p"><strong style="color:#fff;">Before kickoff call:</strong> Full refund if requested within 48 hours of purchase.</p>
+    <p class="content-p"><strong style="color:#fff;">During delivery:</strong> Partial refund prorated based on work completed at time of cancellation request.</p>
+    <p class="content-p"><strong style="color:#fff;">After 30-day period:</strong> No refund once the full package has been delivered.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">EU Consumer Rights</h2>
+    <p class="content-p">Under EU Directive 2011/83/EU, consumers have the right to withdraw from a distance contract within 14 days without giving any reason - unless the digital service has already begun with the consumer's prior express consent and acknowledgement that the right of withdrawal is lost upon commencement.</p>
+    <p class="content-p">By purchasing and scheduling your kickoff session, you expressly consent to the immediate start of the service and acknowledge that the right of withdrawal may be lost once the service commences.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">How to Request a Refund</h2>
+    <p class="content-p">To request a refund, email <a href="mailto:return@michalfarkas.com" style="color:#6366F1;">return@michalfarkas.com</a> with:</p>
+    <ul class="content-ul">
+      <li>Your full name and email used for purchase</li>
+      <li>Order confirmation number</li>
+      <li>Reason for the refund request</li>
+    </ul>
+    <p class="content-p">We will respond within 2 business days. Approved refunds are processed via Stripe and typically appear within 5–10 business days depending on your bank.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="content-h">Questions?</h2>
+    <p class="content-p">Reach out anytime at <a href="mailto:hello@michalfarkas.com" style="color:#6366F1;">hello@michalfarkas.com</a> - we're happy to help.</p>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Michal Farkaš · <a href="https://michalfarkas.com">michalfarkas.com</a></span>
+    <span>
+      <a href="/about">About</a> &nbsp;·&nbsp;
+      <a href="/terms">Terms</a> &nbsp;·&nbsp;
+      <a href="/returns">Returns</a>
+    </span>
+    <span><a href="mailto:hello@michalfarkas.com">hello@michalfarkas.com</a></span>
+  </footer>
+
+</body>
+</html>
